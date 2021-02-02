@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://source.unsplash.com/1600x900/?weather");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.main{
+    width: 60vh;
+    margin: 100px auto;
+    background-color: rgba(240, 249,256 , 0.6);
+    padding: 24px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.main > *{
+    margin-bottom: 20px;
+}
+#searchbox{
+    width: 100%;
+    background-color: rgba(240, 249,256 , 0.6);
+    border: none;
+    outline: none;
+    color: rgb(92, 71, 71);
+    font-size: 1.3rem;
+    height: 50px;
+    border-radius: 6px;
+    padding: 0 10 px;
+    text-align: center;
+}
+
+#searchbox:focus{
+    background-color: rgba(240, 249,256);
+    border-radius: 10px;
+
+}
+
+.display{
+    display: none;
+    color: #582233;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(240, 249,256 , 0.6); 
+    height: 50vh;
+}
+
+ .city, .time,.type{
+    font-weight: bold;
+}
+
+.temp{
+    font-size: 50pt;
+    font-weight: 700;
+    margin: 40px 0;
+    text-shadow: 2px 4px rgb(0, 0, 0,0.3);
+}
+
+
+.type{
+    margin: 10px;
+}
+ .report{
+    font-size: 25pt;
+    font-weight: 700;
+    color: rgb(85, 53, 53);
+margin-bottom: 10px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    
+<div class="main">
+    <form action="/weather" method="POST">
+    <div class="search">
+        <div class="report">Weather Report</div>
+        <input type="text" name="searchbox"  id="searchbox" placeholder="Enter your City">
+    </div>
+</form>
+<% if(typeof(w)!='undefined'){ %>
+    <div class="display">
+        <div class="city" id="city"><%= w.city %></div>
+        <div class="time" id="time"></div>
+        
+        <div class="temp" id="temp"><%= w.temp %>&deg;C</div>
+        <div class="type" id="obstime"><%= w.obstime %></div>
+        <div class="type" id="type"><%= w.type %></div>
+        
+    </div>
+    <% } %>
+</div>
+
+</body>
+</html>
+
+<script>
+
+show();     
+function show(){
+    if(document.getElementById('time')!=""){
+    document.querySelector('.display').style.display="block";  } 
+var today = new Date(); 
+var week=["Monday","Tuesday",'Wednesday','Thursday','Friday','Saturday','Sunday']
+var loct = today.getDay()
+var date = today.getDate()+ '/' +(today.getMonth() + 1)+ '/' + today.getFullYear()   ;
+let time=document.getElementById('time');
+
+time.innerText=`(${week[loct-1]}) ${date}`;
+
+let ty=document.getElementById('type').innerText;
+changewall(ty);
+
+
+
+
+}
+function changewall(url){
+    if(url=='Sunny')
+    document.body.style.backgroundImage=`url( https://c.wallhere.com/photos/c0/b7/urban_architecture_architettura_buildings_building_museo_automobile_torino-758032.jpg!d
+        )`;
+    else if(url=='Haze')
+    document.body.style.backgroundImage=`url( https://www.setaswall.com/wp-content/uploads/2017/06/Fog-Wallpapers-23-2560-x-1600-768x480.jpg )`;
+   
+    else if(url=='Mist')
+    document.body.style.backgroundImage=`url( https://external-preview.redd.it/uXph-aQl65LEMx6tzW_11oo3sUkJ5keWzhNx6VKuO_s.jpg?auto=webp&s=af33259ad0da522f2165033965cfd4dc99da07c1 )`;
+  
+    else if(url=='Partly cloudy')
+    document.body.style.backgroundImage=`url( https://cdn.hipwallpaper.com/i/92/95/MQYApb.jpg)`;
+  
+
+
+
+
+};
+</script>
