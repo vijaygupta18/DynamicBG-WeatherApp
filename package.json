@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "strat":"node app.js"
+    "start":"node app.js"
   },
   "author": "vijay gupta",
   "license": "ISC"
