@@ -15,10 +15,10 @@ body{
 
 }
 .main{
-    width: 60vh;
+    width: 58vh;
     margin: 100px auto;
     background-color: rgba(240, 249,256 , 0.6);
-    padding: 24px;
+    padding: 22px;
     text-align: center;
     border-radius: 8px;
 }
@@ -66,18 +66,8 @@ body{
     text-shadow: 2px 4px rgb(0, 0, 0,0.3);
 }
 
-.foot
-{
-   
-    color: rgb(3, 3, 3);
-    
-     margin-left: 43%;
-     margin-top: 3%;
-}
-.foot a:hover
-{
-    color: rgb(46, 46, 11);
-}
+
+
 
 .type{
     margin: 10px;
