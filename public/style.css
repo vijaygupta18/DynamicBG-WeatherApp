@@ -6,7 +6,8 @@
 
 body{
     background-image: url("https://source.unsplash.com/1600x900/?weather");
-    height: 100vh;
+    height: 100%;
+width: 100%
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -81,9 +82,12 @@ margin-bottom: 10px;
 
 
 
+@media only screen and (max-width: 768px) {
+  .main{
+height: 100%
+    width: 100%;
 
-
-
+}}
 
 
 
