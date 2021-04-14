@@ -5,15 +5,15 @@ A simple Weather report page built using Node JS  display weather conditions usi
 
 - Clone the repo and install the dependencies.
 
-_git clone https://github.com/vijaygupta18/WeatherApp-Dynamic-Background.git_
+``` git clone https://github.com/vijaygupta18/WeatherApp-Dynamic-Background.git_
 
-_cd the-example-app.nodejs_
+cd the-example-app.nodejs ```
 
-**npm install**
+```npm install```
 
 Steps for read-only access
 To start the express server, run the following
 
-**npm run start:dev**
+```npm run start:dev```
 
 Open http://localhost:3000 and take a look around.
